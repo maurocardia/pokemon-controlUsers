@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:app": "npm-run-all install:client install:server",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm run start:dev",
+    "start:app": "npm-run-all --parallel start:server start:client",
+    "build:client": "cd client &&  npm run build",
+    "start:app:prod": "cd server && npm  start",
+    "heroku-postbuild": "npm-run-all install:app build:client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

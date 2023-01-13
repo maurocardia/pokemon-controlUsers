@@ -1,0 +1,100 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.inputLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.containerLogin {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.closeBar {
+  display: none;
+}
+
+.containerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imputPass {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.eye {
+  position: absolute;
+  left: 20.5vw;
+  bottom: 2.5rem;
+}
+
+.message {
+  text-align: center;
+  margin-left: 5rem;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.nameBar:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 1px 3px white;
+  transition: all 200ms;
+}
+
+@media screen and (min-width: 1280px) {
+  .eye {
+    left: 20.5vw;
+  }
+}
+
+@media screen and (max-width: 767.9px) and (min-width: 500px) {
+  .eye {
+    left: 42vw;
+  }
+  .img-fluid {
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 500.9px) {
+  .img-fluid {
+    width: 14rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .containerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message {
+    margin: 0;
+  }
+  .eye {
+    left: 36vw;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(123, 16, 16);
+}
+.navBarFont {
+  background-color: rgb(123, 16, 16) !important;
+}
+
+.togleNavOff {
+  display: flex;
+  right: 30rem;
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+  transition: all 500ms;
+}
+.togleNavOn {
+  display: flex;
+  right: 0rem;
+  transition: all 500ms;
+  position: relative;
+  opacity: 1;
+}
+
+.logUser {
+  color: white;
+  font-size: xx-large;
+  margin-bottom: 0.3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 500ms;
+  text-align: start;
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+}
+
+.logUser:hover {
+  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+  transform: scale(1.5);
+}
+
+.containerBar {
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 15rem;
+  top: 0;
+  z-index: 4;
+}
+
+.navbar-brand {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+  .titleApp {
+    display: none;
+  }
+  .container {
+    display: flex;
+  }
+  .togleNavOff {
+    display: flex;
+    right: 0rem;
+    transition: all 500ms;
+    position: relative;
+    opacity: 1;
+  }
+}

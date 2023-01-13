@@ -1,0 +1,10 @@
+.containerImg > img {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.333);
+  box-shadow: inset 0px 2px 3px gray;
+}
+
+h5 > span {
+  font-weight: 650;
+}
